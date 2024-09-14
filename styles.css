@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;  /* Enables smooth scrolling */
+}
+
+h1, h3 {
+    color: #fff;
+}
+h2{
+    color: aliceblue;
+}
+h4 {
+    color: #ccc;
+}
+
+.contact-info {
+    font-size: 1rem;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* Increase the gap between phone and email */
+}
+.contact-info span {
+    display: inline-block;
+    font-size: 1.2rem;
+}
+
+.contact-info span:hover {
+    color: #ccc; /* Hover effect */
+}
+/* Navigation Bar */
+nav {
+    background-color: #111;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;  /* Changed from top: 10px to top: 0 for consistent positioning */
+    z-index: 1000;
+    text-align: center; /* Center aligns the content */
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex; /* Changed to inline-flex to align the list items in the center */
+    justify-content: center; /* Center the items horizontally */
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul li {
+    margin-right: 50px;
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove the margin for the last item */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* Intro Section */
+.intro {
+    text-align: center;
+     /* To offset the height of the fixed navbar */
+    padding: 100px 0;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+/* About Section */
+.about {
+    padding: 20px 20px;
+    text-align: center;
+    background-color: #222;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Skills Section */
+.skills {
+    padding: 80px 20px;
+    background-color: #222;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills ul li {
+    padding: 5px 0;
+}
+
+/* Work Experience Section */
+.work {
+    background-color: #333;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.job {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #222;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    color: #fff;
+}
+
+.project span {
+    display: block;
+    color: #999;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #111;
+}
