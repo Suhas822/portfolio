@@ -125,10 +125,46 @@
             <h1 class="display-4">I'm, Suhas Jadhav</h1>
             <h2 class="text-secondary">Backend Developer<br>Technology Agnostic</h2>
             <div class="contact-info d-flex justify-content-around flex-wrap">
-                <span class="d-block">&#x260E; +917262893749</span>
-                <span class="d-block">&#x2709; jadhavsuhas822@gmail.com</span>
+                <!-- Click to call phone number -->
+                <span class="d-block">
+                    <a href="tel:+917262893749" style="color: inherit; text-decoration: none;">
+                        &#x260E; +917262893749
+                    </a>
+                </span>
+                
+                <!-- Click to open email client -->
+                <span class="d-block">
+                    <a href="mailto:jadhavsuhas822@gmail.com" style="color: inherit; text-decoration: none;">
+                        &#x2709; jadhavsuhas822@gmail.com
+                    </a>
+                </span>
             </div>
         </div>
+        <script>
+            function copyToClipboard(elementId) {
+                // Get the text content from the clicked element
+                var text = document.getElementById(elementId).innerText;
+                
+                // Create a temporary textarea to hold the text
+                var tempInput = document.createElement("textarea");
+                tempInput.style.position = "absolute";
+                tempInput.style.left = "-9999px"; // Move it offscreen
+                
+                // Set the value to the text to be copied
+                tempInput.value = text;
+                document.body.appendChild(tempInput);
+                
+                // Select the text and copy it to the clipboard
+                tempInput.select();
+                document.execCommand("copy");
+                
+                // Remove the temporary textarea
+                document.body.removeChild(tempInput);
+                
+                // Show an alert or message to the user (optional)
+                alert("Copied: " + text);
+            }
+        </script>
     </section>
 
     <!-- About Section -->
