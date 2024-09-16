@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Suhas Jadhav</title>
+    <title>Suhas Jadhav</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="/static/css/portfolio.dcbd730670df.css">
@@ -81,9 +81,37 @@
         margin: 10px 0; /* Increase space between nav links on small screens */
     }
 }
+.dot-list {
+            list-style: none; /* Remove default list styling */
+            padding-left: 0; /* Remove default padding */
+        }
+        .dot-list li {
+            position: relative;
+            padding-left: 15px; /* Space for the dot */
+            margin-bottom: 10px; /* Space between list items */
+        }
+        .dot-list li::before {
+            content: '•'; /* Dot character */
+            position: absolute;
+            left: 0; /* Align dot to the start */
+            color: #fff; /* Color of the dot */
+            font-size: 20px; /* Size of the dot */
+        }
+        .no-click {
+    pointer-events: none; /* Prevent clicking */
+    cursor: default; /* Show default cursor */
+    background-color: transparent;
+    border-color: #f2f7f7; /* Button-like border */
+    color: #f6f9f9; /* Button-like text color */
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
     </style>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #0f0f0f; color: #fff; margin: 0; padding: 0; scroll-behavior: smooth;">
+<body style="font-family: Arial, sans-serif; background-color: #090909; color: #fff; margin: 0; padding: 0; scroll-behavior: smooth;">
 
     <!-- Navigation Bar -->
     <header>
@@ -123,14 +151,14 @@
     <section class="intro text-center p-5">
         <div class="container"style="margin-top: 50px;">
             <h1 class="display-4">I'm, Suhas Jadhav</h1>
-            <h2 class="text-secondary">Backend Developer<br>Technology Agnostic</h2>
+            <h2 style="color: #c7c6c6;">Backend Developer<br>Technology Agnostic</h2>
             <div class="contact-info d-flex justify-content-around flex-wrap">
                 <!-- Click to call phone number -->
                 <span class="d-block">
                     <a href="tel:+917262893749" style="color: inherit; text-decoration: none;">
                         &#x260E; +917262893749
                     </a>
-                </span>
+                </span> 
                 
                 <!-- Click to open email client -->
                 <span class="d-block">
@@ -171,7 +199,7 @@
     <section id="about" class="about" style="padding: 20px 80px; background-color:#0f0f0f;">
         <h2 style="color: #fff;">About Me</h2>
         <hr class="bg-secondary my-4">
-        <p style="font-size: 1rem; color: #ccc;">I am a technology agnostic developer boasting a diverse experience of over 2 years in the field. My proficiency spans across Python and Dart, with Python being my primary language of expertise. I find immense joy in turning conceptual ideas into tangible realities, a passion that drives my work every day. One of my standout skills is my expertise in code debugging. In my free time at work, I enjoy delving into library code, abstracted code, and exploring the intricacies of the proverbial black box. Unraveling complexities and understanding the inner workings of the code is not just a task but a gratifying endeavor for me.
+        <p style="color: #c7c6c6;font-size: 1rem;">I am a technology agnostic developer boasting a diverse experience of over 1.5 years in the field. My proficiency spans across Python. It is my primary language of expertise. I find immense joy in turning conceptual ideas into tangible realities, a passion that drives my work every day. One of my standout skills is my expertise in code debugging. In my free time at work, I enjoy delving into library code, abstracted code, and exploring the intricacies of the proverbial black box. Unraveling complexities and understanding the inner workings of the code is not just a task but a gratifying endeavor for me.
 
             Moreover, I am a staunch advocate for writing tests. I firmly believe that tests play a pivotal role in any project, instilling confidence in the code we produce. This commitment to testing reflects my dedication to delivering robust and reliable solutions in every project I undertake.</p>
     </section>
@@ -183,10 +211,14 @@
             <hr class="bg-secondary my-4">
             <div class="row">
                 <div class="col-md-6">
-                    <p><span class="fw-bold text-white">Frameworks: </span> Django, Django REST, Wagtail, Flutter</p>
-                    <p><span class="fw-bold text-white">Languages: </span> Python, Dart</p>
-                    <p><span class="fw-bold text-white">Database: </span> PostgreSQL</p>
-                    <p><span class="fw-bold text-white">Others: </span> Celery, Elasticsearch, Git, HTML, CSS, OOP, DSA</p>
+                    <p><span class="fw-bold text-white">Languages: </span> <span style="color:  #c7c6c6;"> Python, Javascript</span></p>
+                    <p><span class="fw-bold text-white">Frameworks: </span> <span style="color:  #c7c6c6;">Django, Django REST, Wagtail</span></p>
+                    <p><span class="fw-bold text-white">AL Tools: </span> <span style="color:  #c7c6c6;">Gemini,Vertex AI</span></p>
+                    <p><span class="fw-bold text-white">Database: </span> <span style="color:  #c7c6c6;">PostgreSQL,MySQL,SQLite,MongoDB,Firebase</span></p>
+                    <p><span class="fw-bold text-white">Others: </span> <span style="color:  #c7c6c6;">Celery, Redis, RabbitMQ</span></p>
+                    <p><span class="fw-bold text-white">Web Hosting: </span> <span style="color:  #c7c6c6;">Linux, NGINX, Apache, Docker</span></p>
+                    <p><span class="fw-bold text-white">Developer Tools: </span><span style="color:  #c7c6c6;">Git,Github, Selenium, Postman</span></p>
+                    
                 </div>
             </div>
         </div>
@@ -197,22 +229,72 @@
         <div class="container">
             <h2 class="text-white">Work Experience</h2>
             <hr class="bg-secondary my-4">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="job mb-4">
-                        <h3 class="text-white">Backend Developer - Agraylah Technologies</h3>
-                        <ul class="list-unstyled">
-                            <li>Development of robust and scalable backend systems...</li>
-                            <li>Developed RESTful APIs and WebSocket servers...</li>
-                            <li>Proficiently utilized backend programming languages...</li>
-                        </ul>
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-3 text-left">
+                        <p class="text-white">February, 2024 --Present</strong></p>
                     </div>
-                    <div class="job mb-4">
-                        <h3 class="text-white">Software Engineer Intern - Blek</h3>
-                        <p>Developing mobile application screens using Flutter...</p>
+                    <div class="col-md-9">
+                        <div class="job">
+                            <h3 class="text-white">Software Developer</h3>
+                            <h5 class="text-white">Agrahyah Technologies</h5>
+                            <ul class="dot-list">
+                                <li><span style="color:  #c7c6c6;">Development of robust and scalable backend systems, taking full ownership of database design, code architecture,
+                                    and implementation</span></li>
+                                <li><span style="color:  #c7c6c6;">Developed RESTful APIs and WebSocket servers for seamless communication with web, Android, and iOS client
+                                    applications.</span></li>
+                                <li><span style="color:  #c7c6c6;">Optimizing API performance, achieving a remarkable 25% improvement improvement in API response
+                                    times, resulting in enhanced system efficiency and user satisfaction.</span></li>
+                                <li><span style="color:  #c7c6c6;">I developed projects leveraging Gemini AI and Vertex AI for advanced AI-driven solutions.</span></li>
+                                <li><span style="color:  #c7c6c6;">Successfully built the entire backend for <a href="https://mandanparivar.com" style="color: #0f21e3;"target="_blank">mandanparivar.com</a> ,<a href="https://moryare.com" style="color:#0f21e3;"target="_blank">moryare.com</a> projects, ensuring high
+                                    performance, reliability, and scalability.Also work on  <a href="https://aawaz.com" style="color: #0f21e3;"target="_blank">aawaz.com</a>.</span></li>
+                                    <span class="text-muted"><p class="btn btn-outline-light no-click">Python</p><p class="btn btn-outline-light no-click">Django</p><p class="btn btn-outline-light no-click">Django REST</p><p class="btn btn-outline-light no-click">PostgreSQL</p><p class="btn btn-outline-light no-click">Celery</p><p class="btn btn-outline-light no-click">Firebase</p><p class="btn btn-outline-light no-click">Redis</p><p class="btn btn-outline-light no-click">Git</p></span>
+                       
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="row mb-4">
+                    <div class="col-md-3 text-left">
+                        <p class="text-white">October, 2023 -- January, 2024</strong></p>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="job">
+                            <h3 class="text-white">Software Developer</h3>
+                            <h5 class="text-white">Digikagaz </h5>
+                            <ul class="dot-list">
+                                <li><span style="color:  #c7c6c6;">With expertise in Django Rest Framework, Celery and MySQL, adept at crafting robust solutions for web
+                                    development and automation.</span></li>
+                                <li><span style="color:  #c7c6c6;">Creating websites using Django for the backend. Implementing frontend solutions using React js, along with
+                                    HTML and CSS. Developing web scraping scripts using various tools and techniques. Automating tasks using
+                                    Selenium for increased efficiency.</span></li>
+                                <li><span style="color:  #c7c6c6;">Developing RESTFul APIs for Application requirements.</span></li>
+                                <span class="text-muted"><p class="btn btn-outline-light no-click">Python</p><p class="btn btn-outline-light no-click">Django</p><p class="btn btn-outline-light no-click">JavaScript</p><p class="btn btn-outline-light no-click">SQLite</p><p class="btn btn-outline-light no-click">REST APIs</p><p class="btn btn-outline-light no-click">Firebase</p></span>
+                       
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-3 text-left">
+                    <p class="text-white">May, 2023--September, 2023</strong></p>
+                </div>
+                <div class="col-md-9">
+                    <div class="job">
+                        <h3 class="text-white">Software Developer Intern</h3>
+                        <h5 class="text-white">Webcorestone Software Solutions </h5>
+                        <ul class="dot-list">
+                            <li><span style="color:  #c7c6c6;">I created a CMS website to deepen my understanding of advanced Django ORM and its capabilities.</span></li>
+                            <li><span style="color:  #c7c6c6;">It enhanced my skills in Django and provided practical experience with its ORM features.
+                            </span></li>
+                            <span class="text-muted"><p class="btn btn-outline-light no-click">Python</p><p class="btn btn-outline-light no-click">Django</p><p class="btn btn-outline-light no-click">JavaScript</p><p class="btn btn-outline-light no-click">SQLite</p></span>
+                       
+                            
+                        </ul>
+                    </div>
+                </div>
+        </div>
         </div>
     </section>
 
@@ -222,22 +304,52 @@
             <h2 class="text-white">Projects</h2>
             <hr class="bg-secondary my-4">
             <div class="row">
+    
+                <!-- First Project Card -->
                 <div class="col-md-6 mb-4">
-                    <h3 class="text-white">Automated Plant Classification</h3>
-                    <p>Plant Classification through computer vision...</p>
-                    <span class="text-muted">Python, Flutter, Flask</span>
+                    <div class="card border-light h-100"style="background-color: #090909;">
+                        <img src="online_auction.png" class="card-img-top" alt="Online Auction">
+                        <div class="card-body">
+                            <h3 class="card-title text-white">Online Auction</h3>
+                            <p class="card-text"><span style="color:  #c7c6c6;">Built an online auction website to enable buyers and sellers to conduct auctions efficiently and maximize
+                                profits. The site features a simple, user-friendly interface designed with HTML/CSS, powered by Django for
+                                the backend, and uses Django ORM with MySQL for database management. It streamlines auction
+                                processes, enhances data management, and optimizes user profitability through a visually appealing and
+                                robust infrastructure.</span></p>
+                            <span class="text-muted"><p class="btn btn-outline-light no-click">Python</p><p class="btn btn-outline-light no-click">Django</p><p class="btn btn-outline-light no-click">JavaScript</p><p class="btn btn-outline-light no-click">MySQL</p><p class="btn btn-outline-light no-click">REST</p></span>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://github.com/Suhas822/Auction"   style="color: #0f21e3;"target="_blank">Click here</a>
+                        </div>
+                    </div>
                 </div>
+    
+                <!-- Second Project Card -->
                 <div class="col-md-6 mb-4">
-                    <h3 class="text-white">Auto Lead Extraction and Digitization of ECG</h3>
-                    <p>We propose a deep learning-based model for extracting ECG leads...</p>
-                    <span class="text-muted">Python, Deep Learning, GAN</span>
+                    <div class="card border-light h-100"style="background-color: #090909;">
+                        <img src="image.webp" class="card-img-top" alt="ECG Lead Extraction">
+                        <div class="card-body">
+                            <h3 class="card-title text-white">Image Uploader</h3>
+                            <p class="card-text"><span style="color:  #c7c6c6;">Our project incorporates a feature that allows users to upload images online.The uploaded images are
+                                displayed on the website for users to view. Users can easily upload their images, and the website showcases
+                                them seamlessly. The admin can efficiently manage and remove images as needed. </span></p>
+                            <span class="text-muted"><p class="btn btn-outline-light no-click">Python</p><p class="btn btn-outline-light no-click">Django</p><p class="btn btn-outline-light no-click">JavaScript</p><p class="btn btn-outline-light no-click">MySQL</p></span>
+                        </div>
+                        <div class="card-footer"></div>
+                            <a href="https://github.com/Suhas822/image_uploader1"   style="color: #0f21e3;"target="_blank">  Click here</a>
+                        </div>
+                    </div>
                 </div>
+    
             </div>
         </div>
     </section>
+    
     <!-- Contact Section (Footer) -->
     <footer id="contact" style="text-align: center; padding: 50px; background-color: #111;">
         <p>Contact: jadhavsuhas822@gmail.com</p>
+        <p><a href="https://github.com/Suhas822/"   style="color: #0f21e3;"target="_blank">Github</a></p>
+        <p><a href="https://www.linkedin.com/in/suhas-jadhav-48225420b/"   style="color: #0f21e3;"target="_blank">LinkedIn</a></p>
     </footer>
     <script type="text/javascript" src="/static/js/portfolio.d41d8cd98f00.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
